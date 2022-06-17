@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="style" href="https://fonts.google.com/specimen/Lexend+Deca"/>
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Big+Shoulders+Display"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;">
+    <style>
+        body{
+            font-family: 'Lexend Deca';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 400;
+        }
+        .main{
+            height: 500px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* margin-top: 30%; */
+        }
+        .div{
+            height: 400px;
+            width: 26%;
+            padding: 0px;
+            border: 0px;
+        }
+        button{
+            height: 35px;
+            width: 120px;
+            border-radius: 25px;
+            background-color: white;
+            text-align: center;
+            border: 0px;
+            cursor: grab;
+        }
+        p{
+            padding: 10px 30px 50px 30px;
+            color:aliceblue;
+            font-size: 14px;
+            line-height: 20px;
+            justify-content: baseline;
+            align-items: baseline;
+        }
+        strong{
+            padding-left: 30px;
+            color: white;
+            font-weight: 700;
+            font-family: 'Big shoulder display';
+        }
+        .butt{
+            height: 40px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 30px;
+        }
+        img{
+            height: 30px;
+            width: 50px;
+            padding: 30px;
+        }
+        .butt1:hover{
+            background-color: rgba(253, 128, 11, 0);
+            border: 1px solid white;
+            color: white;
+        }
+        .butt2:hover{
+            background-color: rgba(14, 94, 74, 0);
+            border: 1px solid white;
+            color: white;
+        }
+        .butt3:hover{
+            background-color: rgba(2, 66, 50, 0);
+            border: 1px solid white;
+            color: white;
+        }
+        .butt1{
+            color: hsl(31, 77%, 52%);
+        }
+        .butt2{
+            color: rhsl(184, 100%, 22%);
+        }
+        .butt3{
+            color: hsl(179, 100%, 13%);
+        }
+        .header{
+            display: flex;
+            justify-content: space-around;
+            height: 40px;
+        }
+        div a{
+            text-align: center;
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        @media (max-width: 375px){
+          body{
+            width: 100%;
+          } 
+          .div{
+            height: 90%;
+            padding: 5px;
+            width: 30%;
+          }
+          .butt{
+            height: 30%;
+            padding-top: 5%;
+            width: 70%;
+            margin-top: 10%;
+            padding-left: 20%;
+          }
+          .main{
+            padding-left: 11%;
+          }
+          
+        }
+        
+    </style>
+    <div class="container">
+        <div class="header">
+            <div><a href="index.html">Flexbox</a></div>
+            <div><a href="grid.html">grid</a></div>
+        </div>
+        <div class="main" style="background-color: white;">
+            <div class="div" style="background-color: hsl(31, 77%, 52%); border-top-left-radius: 2%; border-bottom-left-radius: 2%;">
+                <div><img src="images/icon-sedans.svg" alt="sed"></div>
+                <strong>SEDANS</strong>
+                <div style="height: 200px;"><p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p></div>
+                <div class="butt"><button class="butt1">Learn more</button></div>
+            </div>
+            <div class="div" style="background-color: hsl(184, 100%, 22%); ">
+                <div><img src="images/icon-suvs.svg" alt="suv"></div>
+                <strong>SUVS</strong>
+                <div style="height: 200px;"><p>Take and SUV for its spacious interior, power, and versatality. Perfect for your next family vacation and off-road adventures.</p></div>
+                <div class="butt"><button class="butt2">Learn more</button></div>
+            </div>
+            <div class="div" style="background-color: hsl(179, 100%, 13%); border-top-right-radius: 2%; border-bottom-right-radius: 2%;">
+                <div><img src="images/icon-luxury.svg" alt=""></div>
+                <strong>LUXURY</strong>
+                <div style="height: 200px;"><p>Cruise in the best car brand without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.</p></div>
+                <div class="butt"><button class="butt3">Learn more</button></div>
+            </div>
+        </div>
+    </div>
+</body> 
+</html>

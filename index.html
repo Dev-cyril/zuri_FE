@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="style" href="https://fonts.google.com/specimen/Lexend+Deca"/>
-  <link rel="stylesheet" href="https://fonts.google.com/specimen/Big+Shoulders+Display"/>
+    <link rel="style" href="https://fonts.google.com/specimen/Lexend+Deca"/>
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Big+Shoulders+Display"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,10 @@
 </head>
 <body style="background-color: black;">
     <style>
-        body{
+        html, body{
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
             font-family: 'Lexend Deca';
             display: flex;
             justify-content: center;
@@ -23,9 +26,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            /* margin-top: 30%; */
         }
-        .div{
+        .div1, .div2, .div3{
             height: 400px;
             width: 26%;
             padding: 0px;
@@ -101,26 +103,54 @@
             text-decoration: none;
             color: whitesmoke;
         }
-        @media (max-width: 375px){
+        .div1{
+            border-top-left-radius: 2%;
+            border-bottom-left-radius: 2%;
+        }
+        .div3{
+            border-top-right-radius: 2%;
+            border-bottom-right-radius: 2%;
+        }
+        @media (max-width: 570px){
           body{
             width: 100%;
+            /* justify-content: center;
+            align-items: center; */
           } 
-          .div{
-            height: 90%;
+          .container{
+              height: fit-content;
+              padding: 10%;
+              justify-content: center;
+              align-items: center;
+          }
+          .main{
+            height: fit-content;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5% 0;
+         }
+          .div1, .div2, .div3{
+            height: 60%;
             padding: 5px;
-            width: 30%;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+          .div1{
+            border-radius: 2% 2% 0 0;
+          }
+          .div3{
+            border-radius: 0 0 2% 2%;
           }
           .butt{
             height: 30%;
-            padding-top: 5%;
-            width: 70%;
-            margin-top: 10%;
-            padding-left: 20%;
+            width: 100%;
+            margin-bottom: 15%;
           }
-          .main{
-            padding-left: 11%;
-          }
-          
         }
         
     </style>
@@ -130,20 +160,20 @@
             <div><a href="grid.html">grid</a></div>
         </div>
         <div class="main" style="background-color: white;">
-            <div class="div" style="background-color: hsl(31, 77%, 52%); border-top-left-radius: 2%; border-bottom-left-radius: 2%;">
-                <div><img src="icon-sedans.svg" alt="sed"></div>
+            <div class="div1" style="background-color: hsl(31, 77%, 52%);">
+                <div><img src="images/icon-sedans.svg" alt="sed"></div>
                 <strong>SEDANS</strong>
                 <div style="height: 200px;"><p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p></div>
                 <div class="butt"><button class="butt1">Learn more</button></div>
             </div>
-            <div class="div" style="background-color: hsl(184, 100%, 22%); ">
-                <div><img src="icon-suvs.svg" alt="suv"></div>
+            <div class="div2" style="background-color: hsl(184, 100%, 22%); ">
+                <div><img src="images/icon-suvs.svg" alt="suv"></div>
                 <strong>SUVS</strong>
-                <div style="height: 200px;"><p>Take and SUV for its spacious interior, power, and versatality. Perfect for your next family vacation and off-road adventures.</p></div>
+                <div style="height: 200px;"><p>Take an SUV for its spacious interior, power, and versatality. Perfect for your next family vacation and off-road adventures.</p></div>
                 <div class="butt"><button class="butt2">Learn more</button></div>
             </div>
-            <div class="div" style="background-color: hsl(179, 100%, 13%); border-top-right-radius: 2%; border-bottom-right-radius: 2%;">
-                <div><img src="icon-luxury.svg" alt=""></div>
+            <div class="div3" style="background-color: hsl(179, 100%, 13%);">
+                <div><img src="images/icon-luxury.svg" alt=""></div>
                 <strong>LUXURY</strong>
                 <div style="height: 200px;"><p>Cruise in the best car brand without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.</p></div>
                 <div class="butt"><button class="butt3">Learn more</button></div>
